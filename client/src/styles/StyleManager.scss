@@ -1,0 +1,121 @@
+.img_profile_manager {
+    text-align: right;
+    padding: 40px;
+}
+
+.list_order {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 0vh;
+    .block_list {
+        display: flex;
+        flex-direction: column;
+        width: 400px;
+        height: 135px;
+        overflow: auto;
+        li{
+            list-style-type: none;
+        }
+        span{
+            color: #D9D9D9;
+            font-weight: 400;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+    }
+    .btn_edit{
+        width: 100px;
+        height: 23px;
+        border-radius: 30px;
+        background: #08c447;
+        color: white;   
+        margin: 5px;
+    }
+    .btn_remove{
+        width: 100px;
+        height: 23px;
+        border-radius: 30px;
+        background: #a00b0b;    
+        color: white;   
+        margin: 5px;
+    }
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+
+    .block_form {
+        width: 700px;
+        height: 400px;
+        background: #D9D9D9;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+        .flex_content {
+            width: 300px;
+            height: 300px;
+            flex-shrink: 0;
+            background: #6D6D6D;
+            text-align: center;
+
+            .flex_form {
+                margin: 10%;
+
+                input {
+                    text-align: center;
+                    color: white;
+                    margin: 5px;
+                    width: 150px;
+                    height: 20px;
+                    border-radius: 30px;
+                    background: #999797;
+
+                    &::placeholder {
+                        color: white;
+                    }
+                }
+
+                .buttons {
+                    display: flex;
+                    flex-direction: column;
+                    margin: 20px;
+
+                    .btn {
+                        padding: 5px;
+
+                        button {
+                            width: 138px;
+                            height: 23px;
+                            border-radius: 30px;
+                            background: #504d4d;
+                            color: white;
+                        }
+                    }
+                }
+            }
+        }
+
+        .block_outside {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 250px;
+            height: 200px;
+            background: #6D6D6D;
+
+            .block_inside {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 150px;
+                height: 100px;
+                background: #999797;
+                color: white;
+            }
+        }
+    }
+}
