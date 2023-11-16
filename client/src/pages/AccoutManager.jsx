@@ -10,13 +10,13 @@ export default function HomeManager() {
   const [product, setProduct] = useState([]);
   const [isEditing, setIsEditing] = useState(false);
   const [selectedProduct, setSelectedProduct] = useState(null);
- 
+  
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
       if (isEditing) {
         const response = await axios.put(
-          `http://localhost:5000/product/${selectedProduct._id}`,
+          `http://localhost:5000/product/edit/${selectedProduct._id}`,
           { id, name, quantity, price }
         );
         if (response.status === 200) {

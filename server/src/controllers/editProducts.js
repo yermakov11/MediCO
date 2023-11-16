@@ -10,6 +10,7 @@ const editProduct={
         }
     },
     editProduct:async(req,res)=>{
+        console.log(req.params,req.body)
         try {
             const updateProd=await Products.findByIdAndUpdate(req.params.id,req.body,{new:true});
             res.json(updateProd);

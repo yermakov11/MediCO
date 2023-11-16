@@ -23,7 +23,7 @@ app.use("/product",productRoute);
 app.use("/product",showProductRoute);
 app.use("/send_product",sendProductRoute);
 app.use("/:id",deleteProductRoute);
-app.use("/product/:id",editProductRoute);
+app.use("/product/edit",editProductRoute);
 
 mongoose
   .connect(
