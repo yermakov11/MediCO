@@ -11,6 +11,7 @@ export default function Signup() {
   const [email, setEmail] = useState("");
   const[phone,setPhone]=useState("")
   const [role, setRole] = useState("");
+  
   const handelSubmit=(e)=>{
     e.preventDefault();
     axios.post('http://localhost:5000/register',{name,surname,password,email,phone,role,})
